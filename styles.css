@@ -6,6 +6,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    font-family: sans-serif;
 
 }
 
@@ -67,7 +68,6 @@ img {
     height: 100%;
 }
 
-
 .main-content-container{
 
     display: flex;
@@ -78,7 +78,16 @@ img {
 }
 
 .texts-and-buttons-container{
+
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texts-and-buttons-container button{
+
+    align-self: start;
 
 }
 
@@ -98,6 +107,17 @@ p{
     
 }
 
+button{
+
+    padding: 10px 30px;
+    border: #1F2937;
+    border-radius: 6px;
+    background-color: #3882F6;
+    font-weight: 800;
+    color: white;
+}
+
+
 .image-container{
     
     padding: 10px;
@@ -113,7 +133,6 @@ p{
     height: 500px;
 
 }
-
 
 .information-section h2{
 
@@ -166,9 +185,95 @@ p{
 
     width: 150px;
     margin: 0 auto;
-    color: grey;
+    color: rgb(135, 127, 127);
     text-align: center;
     
 }
 
+/* Quote section */
 
+.quote-section{
+    
+    height: 350px;
+    background-color: #E5E7EB;
+    gap: 15px;
+
+
+}
+
+.quote-and-name-container{
+
+    /* border: 1px solid firebrick; */
+    width: 700px;
+    margin: 100px auto;
+    
+}
+
+#quote{
+
+    font-size: 36px;
+    color: #1F2937;
+    margin-bottom: 16px;
+
+}
+
+#name{
+
+    font-size: 20px;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.cta-section{
+    
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cta-container{
+
+    width: 1000px;
+    height: 150px;
+    padding: 25px 150px;
+    border-radius: 16px;
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.cta-title-and-subtext-container{
+
+    width: fit-content;
+    padding: 16px;
+
+}
+
+#cta-title{
+    
+    color: #E5E7EB;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 5px;
+
+}
+
+
+.cta-title-and-subtext-container p{
+
+    font-size: 15px;
+
+}
+
+
+.cta-container button{
+
+    color: #E5E7EB;
+    border: 2px solid #E5E7EB;
+    
+}
